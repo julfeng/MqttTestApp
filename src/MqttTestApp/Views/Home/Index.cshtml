@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>UsonLeakTestApp</title>
+    <base href="~/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/material-design-lite/dist/material.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,100" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="~/lib/moment/min/moment.min.js"></script>
+    <script src="~/lib/paho-mqtt-js/mqttws31.js"></script>
+    <script src="~/lib/cryptojslib/rollups/sha256.js"></script>
+    <script src="~/lib/cryptojslib/rollups/hmac-sha256.js"></script>
+    @*<script src="https://sdk.amazonaws.com/js/aws-sdk-2.6.7.min.js"></script>*@
+    @*<script src="node_modules/aws-iot-device-sdk/index.js"></script>*@
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(console.error.bind(console));
+    </script>
+</head>
+<body>
+    <app-root>Loading...</app-root>
+</body>
+</html>

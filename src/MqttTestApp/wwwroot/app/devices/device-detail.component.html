@@ -1,0 +1,37 @@
+<div class='panel panel-primary' *ngIf='device'>
+    <div class='panel-heading' style='font-size:large'>
+        {{pageTitle + ': ' + device.deviceId }}
+    </div>
+
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-3'>Device Id:</div>
+                    <div class='col-md-6'>{{device.deviceId}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Serial Number:</div>
+                    <div class='col-md-6'>{{device.serialNumber}}</div>
+                </div>
+                <!--<div class='row'>
+                    <div class='col-md-3'>Test Time:</div>
+                    <div class='col-md-6'>{{device.testTime}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Config:</div>
+                    <div class='col-md-6'>{{device.config}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Sample Rate (ms):</div>
+                    <div class='col-md-6'>{{device.adcSampleRateMs}}</div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>
